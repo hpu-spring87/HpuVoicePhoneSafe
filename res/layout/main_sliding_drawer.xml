@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SlidingDrawer
+        android:id="@+id/sd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/main_bottom_slidingdrawer_bg" />
+
+        <GridView
+            android:id="@id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="7dip"
+            android:numColumns="3"
+            android:verticalSpacing="7dip" >
+        </GridView>
+    </SlidingDrawer>
+</merge>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:drawableLeft="@drawable/item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/addblcaknum"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/et_blackname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/putblackname"
+        android:textSize="12sp"
+        android:textColor="#000000" >
+    </EditText>
+    
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/et_blacknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/inputblcaknumber"
+        android:inputType="phone"
+        android:textSize="12sp"
+        android:textColor="#000000" >
+    </EditText>
+    
+    <RadioGroup
+        android:id="@+id/rg_title_id_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dingcandianhau" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_2"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="@string/gongongfuwu" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_title_id_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yunyingshang" />
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kuaidifuwu" />
+        </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_title_id_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jipiaojiuidna" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yinhangzhengjusna" />
+        </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_title_id_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/baoxianfuwu" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/rb_title_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pinpaifuwu" />
+    </RadioGroup>
+</LinearLayout>

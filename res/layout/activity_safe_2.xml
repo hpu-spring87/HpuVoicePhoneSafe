@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hpuvoice="http://schemas.android.com/apk/res/com.hpuvoice.phonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B6BCCC"
+     >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/shoujikabangding"
+        android:gravity="center"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+    
+    <TextView 
+        style="@style/text_content_style"
+        android:text="@string/tepss"
+        />
+
+    <com.hpuvoice.phonesafe.ui.SettingItemView
+        android:id="@+id/siv_bind_sim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        hpuvoice:desc_off="sim卡没有绑定"
+        hpuvoice:desc_on="sim卡已经绑定"
+        hpuvoice:title="点击绑定sim卡" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/show_cat_2" />
+        <Button
+            style="@style/pre_button_style"
+           />
+        <Button
+            style="@style/next_button_style"
+           />
+    </RelativeLayout>
+</LinearLayout>

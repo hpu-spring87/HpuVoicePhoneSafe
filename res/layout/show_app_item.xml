@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="3dp"
+        android:contentDescription="@string/isdesc"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:text="@string/shoujiweishi"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_app_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:text="@string/shoujineicun"
+        android:textColor="#ff0000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_app_position"
+        android:singleLine="true"
+        android:text="@string/_2_13"
+        android:textColor="#ff00ff"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_watch_state"
+        android:contentDescription="@string/isdesc" 
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6BCCC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/shoujifangdao"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/safenum"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_safe_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/xxxx"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/openstate"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_protectting_status"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/locked" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:clickable="true"
+            android:onClick="reEnterSetting"
+            android:text="@string/resetting"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/next_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000"
+        android:text="@string/introduce"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:drawableLeft="@drawable/btn_check_on_holo_light"
+        android:text="@string/gps" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:drawableLeft="@drawable/btn_check_on_holo_light"
+        android:text="@string/music" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:drawableLeft="@drawable/btn_check_on_holo_light"
+        android:text="@string/wipedata" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:drawableLeft="@drawable/btn_check_on_holo_light"
+        android:text="@string/closescreen" />
+
+    <Button
+        style="@style/next_button_style"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showhelp"
+        android:text="@string/help" />
+
+</LinearLayout>

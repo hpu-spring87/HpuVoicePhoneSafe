@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hpuvoice.phonesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="1bfdbeef06" /> <!-- abcd1234 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="feiji" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.MainActivity" >
+            <intent-filter>
+                <action android:name="com.hpuvoice.phonesafe.main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SafeActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SetSafeTep1" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SetSafeTep2" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SetSafeTep3" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SetSafeTep4" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.engine.ReadContact" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.OpenSuperAdmin" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.SetCenterActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.HeightToolsActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.DragToastActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.CommunicationSafeActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.AppMangerActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.TaskMangerActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.AntiVirusActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.CacheClearActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.AboutAppActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.LoginAppActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.ContactUsActivity" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.airplane.FeiJi_Main" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.airplane.FeiJi_Menu" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.airplane.FeiJi_Score" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.airplane.FeiJi_Wel" >
+        </activity>
+        <activity android:name="com.hpuvoice.phonesafe.airplane.FeiJi_BaseAc" >
+        </activity>
+        <activity
+            android:name="com.hpuvoice.phonesafe.TrafficMangerActivity"
+            android:label="TrafficManage" >
+        </activity>
+        <activity
+            android:name="com.hpuvoice.phonesafe.WatchDogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+
+        <receiver android:name="com.hpuvoice.phonesafe.receiver.SimListenerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hpuvoice.phonesafe.receiver.SafeMessageReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.hpuvoice.phonesafe.receiver.SuperAdminReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hpuvoice.phonesafe.receiver.WidgetsReceiver" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/home_widget_provider" />
+        </receiver>
+
+        <service android:name="com.hpuvoice.phonesafe.service.GPSForService" >
+        </service>
+        <service android:name="com.hpuvoice.phonesafe.service.CallingShowAddressService" >
+        </service>
+        <service android:name="com.hpuvoice.phonesafe.service.BlackNumService" >
+        </service>
+        <service android:name="com.hpuvoice.phonesafe.service.AppWidgetsService" >
+        </service>
+        <service android:name="com.hpuvoice.phonesafe.service.WatchDogService" >
+        </service>
+    </application>
+
+</manifest>

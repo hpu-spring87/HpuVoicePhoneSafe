@@ -1,0 +1,110 @@
+<resources>
+
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 标题样式 -->
+    <style name="title_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/main_title_background</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--listview 样式  -->
+     <style name="main_below_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="main_below2_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:textColor">#FF929292</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--设置引导样式  -->
+      <style name="text_content_style" parent="AppBaseTheme">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- 设置下一个按钮样式 -->
+     <style name="next_button_style" parent="AppBaseTheme">
+        <item name="android:onClick">next</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">下一步</item>
+    </style>
+
+    <style name="pre_button_style" parent="AppBaseTheme">
+        <item name="android:onClick">pre</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">上一步</item>
+    </style>
+    
+    <style name="widget_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    
+    
+    <!--FeiJi  -->
+    
+    <style name="BackGround">
+        <item name="android:background">@drawable/feiji_background</item>
+    </style>
+
+    <style name="Button_Style">
+        <item name="android:layout_width">@dimen/button_w</item>
+        <item name="android:layout_height">@dimen/button_h</item>
+        <item name="android:layout_marginTop">@dimen/button_top</item>
+        <item name="android:background">@drawable/button_pressed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/button_text</item>
+    </style>
+    
+    <style name="Dialog_Style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+    
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/appmanger"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#81E696" >
+
+        <TextView
+            android:id="@+id/tv_phone_rom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_phone_sd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:background="#E1E6F6" 
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:onClick="showall"
+            android:id="@+id/ib_islock_left"
+            android:contentDescription="@string/isdesc"
+            android:layout_gravity="center" 
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tv_islock_left_press"
+            />
+        <ImageView
+            android:onClick="showlocked"
+            android:id="@+id/ib_islock_right"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/tv_islock_right_unpress"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            />
+        
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:background="#81E696"
+            android:id="@+id/lv_show_apps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp" >
+        </ListView>
+        <ListView
+            android:background="#81E696"
+            android:visibility="invisible"
+            android:id="@+id/lv_show_lockapps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_app_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+</LinearLayout>

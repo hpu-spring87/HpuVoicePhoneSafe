@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#ff181818"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView 
+          android:contentDescription="@string/isdesc"
+          android:layout_width="45dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_launcher"
+          android:layout_gravity="center_horizontal"
+          />
+	<!--  android:layout_weight="1" 渲染的优先级了  值越小 优先级越高  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_weight="1000"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/inputpwd"
+            android:inputType="textPassword"
+            android:textColor="#000000" >
+        </EditText>
+
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:id="@+id/iv_show_password"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/login_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/queing"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/quxiao"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

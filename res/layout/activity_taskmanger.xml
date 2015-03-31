@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/taskmanger"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1E6F6" >
+
+        <TextView
+            android:id="@+id/tv_task_running"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_task_ram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100" >
+
+        <ListView
+            android:id="@+id/lv_show_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_task_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        >
+        <Button
+            android:onClick="selectall"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bt_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quanxuan" />
+
+        <Button
+            android:onClick="cancel"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quxiao" />
+
+        <Button
+            android:onClick="clean"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bt_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qingli" />
+
+        <Button
+            android:onClick="setting"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shezhi" />
+    </LinearLayout>
+</LinearLayout>

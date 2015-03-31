@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/huancunqingli"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/bt_app_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="clearApp"
+            android:text="@string/appclear" />
+
+        <Button
+            android:id="@+id/bt_app_clearnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/yijianqingli" />
+
+        <Button
+            android:id="@+id/bt_sdcard_claer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="clearSD"
+            android:text="@string/sdclear" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6BCCC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/chengxusuo"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/watchdog_show" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_lock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lock_app"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_lock_icon"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@id/tv_lock_name"
+            android:contentDescription="@string/isdesc"
+            android:src="@drawable/locked" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_unlock_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password" />
+
+    <Button
+        style="@style/next_button_style"
+        android:layout_gravity="center_horizontal"
+        android:onClick="unlock"
+        android:text="@string/jiesuoanniu" />
+
+</LinearLayout>

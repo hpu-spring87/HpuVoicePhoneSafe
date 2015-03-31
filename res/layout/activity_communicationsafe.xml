@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hpuvoice="http://schemas.android.com/apk/res/com.hpuvoice.phonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6BCCC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B600FF" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B600FF"
+            android:gravity="center"
+            android:text="@string/Communication"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@string/isdesc"
+            android:onClick="gohome"
+            android:src="@drawable/pre_go" />
+    </FrameLayout>
+
+    <com.hpuvoice.phonesafe.ui.SettingItemView
+        android:id="@+id/cb_calling_blacknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hpuvoice:desc_off="拦截黑名单关闭"
+        hpuvoice:desc_on="拦截黑名单开启"
+        hpuvoice:title="是否开启拦截骚扰电话" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:contentDescription="@string/isdesc"
+            android:onClick="showblacknum"
+            android:src="@drawable/comm_1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:contentDescription="@string/isdesc"
+            android:onClick="addblacknum"
+            android:src="@drawable/comm_2" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:contentDescription="@string/isdesc"
+            android:onClick="backupMsg"
+            android:src="@drawable/comm_3" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:contentDescription="@string/isdesc"
+            android:onClick="showBackupMsg"
+            android:src="@drawable/comm_4" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_show_blacknum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/pb_lv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress_medium_green" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hpuvoice="http://schemas.android.com/apk/res/com.hpuvoice.phonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B6BCCC" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="#B600FF"
+	    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="@string/setcenter"
+	        android:background="#B600FF"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp"
+            />   
+            <ImageView
+            android:onClick="gohome" 
+            android:contentDescription="@string/isdesc"
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:src="@drawable/pre_go" />  
+    </FrameLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:contentDescription="@string/isdesc"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:src="@drawable/login_logo"
+			android:layout_centerInParent="true"
+			android:id="@+id/login_logo"            
+            />
+        <Button 
+            android:onClick="login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loginnow"
+            android:textSize="12sp"
+            android:typeface="serif"
+            android:textColor="#ffffff"
+            android:background="#B6BCCC"
+            />
+    </RelativeLayout>
+    <com.hpuvoice.phonesafe.ui.SettingItemView
+        android:id="@+id/cb_state_applock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hpuvoice:desc_off="程序锁关闭"
+        hpuvoice:desc_on="程序锁开启"
+        hpuvoice:title="是否开启程序锁" />
+    
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_set_center"
+        ></ListView>
+
+</LinearLayout>

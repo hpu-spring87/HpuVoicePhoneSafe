@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hpuvoice="http://schemas.android.com/apk/res/com.hpuvoice.phonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B6BCCC">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="#B600FF"
+	     >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="@string/heighttools"
+	        android:background="#B600FF"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp"
+            />   
+            <ImageView
+            android:onClick="gohome"
+            android:contentDescription="@string/isdesc"
+            android:id="@+id/home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:src="@drawable/pre_go" />  
+    </FrameLayout>
+    
+    <com.hpuvoice.phonesafe.ui.SettingItemView
+        android:id="@+id/cb_calling_isshowaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hpuvoice:desc_off="来电显示归属地关闭"
+        hpuvoice:desc_on="来电显示归属地开启"
+        hpuvoice:title="是否开启来电显示归属地"
+        
+        />
+    <com.hpuvoice.phonesafe.ui.ListviewItemView
+        android:id="@+id/liv_showstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showstyle"
+    	/>
+    <com.hpuvoice.phonesafe.ui.ListviewItemView
+        android:id="@+id/liv_show_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showlocation"
+    	/>
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/qingshuruhaoma"
+        android:id="@+id/et_num"
+        />
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_height_tools"
+        ></ListView>
+
+</LinearLayout>
